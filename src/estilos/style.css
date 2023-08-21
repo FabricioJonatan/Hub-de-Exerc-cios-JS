@@ -1,0 +1,184 @@
+/* Header CSS */
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo{
+    width: 10rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+header .navbar:last-child{
+    position: absolute;
+    width: 100%;
+    background-color: #00000058;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    row-gap: 32px;
+    margin-right: 1.5rem;
+    height: 100%;
+}
+
+.navbar-item{
+    padding: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+.navbar-item:hover{
+    background-color: #000000b2;
+}
+
+/* Main content CSS */
+
+main #first-content-container:first-child{
+    background: #123;
+    background-position: center center;
+}
+
+main #second-content-container{
+    background: #321;
+    padding-top: 100px;
+}
+
+.content-container{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.content-title{
+    color: #fff;
+    flex: 1.5;
+}
+
+
+.sub-title{
+    font-size: 1.3rem;
+    margin: .5rem;
+}
+
+.title{
+    font-size: 2.4rem;
+    margin: .5rem;
+}
+
+.animation-intro{
+    animation: introTitleAnimation .7s 1;
+}
+
+.btn-link{
+    margin: .5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: #000000a5;
+    border: 1px solid #fff;
+    width: 7rem;
+    height: 3rem;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-link:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+.line-animation{
+    transform: translateY(11px);
+    width: 100%;
+    border: solid 1px transparent;
+    animation: btnLinkHover .4s 1;
+}
+
+
+.content{
+    color: white;
+    font-size: 1.5rem;
+    flex: 2;
+    text-align: justify;
+}
+
+.content-link{
+    color: #c1c1c1;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.content-link:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer CSS */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.navbar-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-nav-link{
+    color: #b5b5b5;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-nav-link:hover{
+    color: #fff;
+}
+
+@keyframes btnLinkHover {
+    from{
+        border: solid 5px #fff;
+        transform: translateY(-20px);
+    }
+    to{
+        border: solid 1px #fff;
+    }
+}
+
+@keyframes introTitleAnimation {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}

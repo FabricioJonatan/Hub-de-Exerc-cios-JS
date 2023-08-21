@@ -1,0 +1,4 @@
+Projeto feito para praticar HTML, CSS e JS além também de apresentar de maneira bonita todas as práticas produzidas para o estudo e aprendizado de JS
+
+O layout foi totalmente baseado no do link abaixo na questão de Layout e estilo, porém adaptada para a minha propósta de apresentar minhas práticas.
+https://www.spacex.com/
